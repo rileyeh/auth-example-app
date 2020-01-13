@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import {connect} from 'react-redux'
-import {login} from '../Redux/reducers/user'
+import {login} from '../../Redux/reducers/user'
 
 class Login extends Component {
     constructor(props) {
@@ -32,7 +32,7 @@ class Login extends Component {
                     </label>
                     <label>
                         Password:
-                        <input type='text' value={password} name='password' onChange={this.handleChange}/>
+                        <input type='password' value={password} name='password' onChange={this.handleChange}/>
                     </label>
                     <input type='submit' value='Submit'/>
                 </form>

@@ -1,9 +1,9 @@
 import React from 'react'
 import {Route, Switch} from 'react-router-dom'
 
-import Main from './Components/Main'
-import Auth from './Components/Auth'
-import UserOnly from './Components/UserOnly'
+import Main from './Components/Main/Main'
+import Auth from './Components/Auth/Auth'
+import UserOnly from './Components/UserOnly/UserOnly'
 
 export default (
     <Switch>

@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import {connect} from 'react-redux'
-import {register} from '../Redux/reducers/user'
+import {register} from '../../Redux/reducers/user'
 
 class Register extends Component {
     constructor(props) {
@@ -37,7 +37,7 @@ class Register extends Component {
                     </label>
                     <label>
                         Password:
-                        <input type='text' value={password} name='password' onChange={this.handleChange}/>
+                        <input type='password' value={password} name='password' onChange={this.handleChange}/>
                     </label>
                     <input type='submit' value='Submit'/>
                 </form>
