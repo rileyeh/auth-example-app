@@ -1,12 +1,20 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import {connect} from 'react-redux'
+import './Main.scss'
 
 function Main(props) {
     return (
         <div>
-            <h1>main</h1>
-            {props.user && <Link to='/usersonly'>user area</Link>}
+            {props.user ? 
+            <div className='main'>
+                <Link to='/usersonly' className='link'>well, looky there, it's the super secret link. click it if you dare.</Link>
+            </div>
+            :
+            <div className='main'>
+                <h2>you have to log in to see the super secret link.</h2>
+            </div>
+            }
         </div>
     )
 }

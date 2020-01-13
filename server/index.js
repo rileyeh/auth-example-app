@@ -28,6 +28,5 @@ app.use(session({
 app.post('/auth/register', AuthCtrl.register)
 app.post('/auth/login', AuthCtrl.login)
 app.delete('/auth/logout', AuthCtrl.logout)
-app.get('/auth/currentUser', AuthCtrl.currentUser)
 
 app.listen(SERVER_PORT, () => console.log(`running on port ${SERVER_PORT}`))

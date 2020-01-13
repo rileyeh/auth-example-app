@@ -60,18 +60,5 @@ module.exports = {
     logout: (req, res) => {
         req.session.destroy()
         res.sendStatus(200)
-    },
-    currentUser: async (req, res) => {
-        // if (req.session.user) {
-        //     let db = req.app.get('db')
-        //     let {email} = req.session.user
-        //     let users = await db.auth.find_user_by_email(email)
-        //     let user = users[0]
-        //     delete user.password
-        //     req.session.user = user
-        // }
-        
-
-        res.send(req.session.user)
     }
 }
